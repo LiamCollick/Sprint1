@@ -3,17 +3,44 @@
     <head>
         <title>Coffee Club</title>
     </head>
-    <nav>
-        <a href="index.html", style="color:white;">Home</a> |||
-        <a href="news.html", style="color:white;">News</a> |||
-        <a href="activities.html", style="color:white;">Activities</a> |||
-        <a href="shop.html", style="color:white;">Shop</a> |||
-        <a href="signUp.html", style="color:white;">Sign Up</a> |||
-    </nav>
-    <body style="background-color:brown;">
-        <h1 style="font-size:300%;color:white; text-align:center;">Coffee Club</h1>
-        <p style="color:white; text-align:center;">
-            <b>Sign Up to Coffee Club</b>
-        </p>
+    <body style="background-color:brown;" link="white" vlink="white">
+        <nav style="color:white;">
+            <a href="index.html">Home</a> |||
+            <a href="news.html">News</a> |||
+            <a href="activities.html">Activities</a> |||
+            <a href="shop.html">Shop</a> |||
+            <a href="signUp.html">Sign Up</a> |||
+        </nav>
+        <header>
+            <h1 style="font-size:300%;color:white; text-align:center;">Coffee Club</h1>
+        </header>
+        <aside>
+
+        </aside>
+        <section  style="text-align:center; color:white;">
+           <h2>Please enter your information below:</h2>
+            <form action="signUpComplete.html">
+                <img src="coffeePic1.jpg" alt="Coffee picture" style="width:360px;height:240px;" align="right">
+                <img src="coffeePic2.jpg" alt="Coffee picture2" style="width:360px;height:360px;" align="left">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="firstName">First Name:</label><br>
+                    <input type="text" name="firstName" id="firstName" required><br>
+                    <label for="lastName">Last Name:</label><br>
+                    <input type="text" name="lastName" id="lastName" required><br>
+                    <label for="emailAddress">E-mail Address</label><br>
+                    <input type="email" name="emailAddress" id="emailAddress" required><br><br>
+                    Please select your gender<br>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="male"><br>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="female"><br>
+                    <label for="ratherNotSay">Rather Not Say</label>
+                    <input type="radio" name="gender" id="ratherNotSay" value="ratherNotSay"><br><br><br>
+                    <input type="submit">
+                    <p style="text-align:center"><strong>Note:</strong> All fields are required</p>
+                </fieldset>
+            </form>
+        </section>
     </body>
 </HTML>
